@@ -2,4 +2,4 @@
 *.key
 *.key.secure
 *.conf
-
+*.csr
