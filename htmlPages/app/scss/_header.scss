@@ -45,7 +45,7 @@
             transition: color 300ms ease-in-out;
 
             &:not(:last-child){
-                margin-right: 32px;
+                margin-right: 2rem;
             }
 
             &:hover{
@@ -62,7 +62,7 @@
                 height: 5px;
                 left: 0;
                 right: 0;
-                bottom: -30px;
+                bottom: -1.875rem;
                 background: linear-gradient(to right, $limeGreen, $brightCyan);
                 opacity: 0;
                 transition: opacity 300ms ease-in-out;

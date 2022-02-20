@@ -99,7 +99,7 @@ button, .button {
 }
 
 .header__links a:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 2rem;
 }
 
 .header__links a:hover {
@@ -117,7 +117,7 @@ button, .button {
   height: 5px;
   left: 0;
   right: 0;
-  bottom: -30px;
+  bottom: -1.875rem;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
   opacity: 0;
