@@ -1,6 +1,35 @@
 .header {
+
+    &.open {
+        .overlay {
+            position: fixed;
+            top: 0px;//3.75rem;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+            background-image: linear-gradient($darkBlue, transparent);
+        }
+        .header__toggle{
+            > span:first-child{
+                transform: rotate(45deg) 
+            }
+    
+            > span:nth-child(2){
+                opacity: 0;
+            }
+    
+            > span:last-child{
+                transform: rotate(-45deg);
+            }
+        }
+        
+    }
+
     nav{
-        padding: 1.0625rem 1.5rem;
+        position: relative;
+        background-color: $white;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
     }
     &__logo {
 
@@ -10,30 +39,18 @@
         }
     }
 
-    &__menu { // mobile menu
+    &__toggle { // mobile menu
          > span {
              display: block;
              width: 26px;
              height: 2px;
              background-color: $darkBlue;
+             transition: 300ms ease-in-out;
+             transform-origin: 3px 1px;
             
              &:not(:last-child){
                 margin-bottom: 5px;
             }
-        }
-    }
-
-    &.open {
-        > span:first-child{
-
-        }
-
-        > span:nth-child(2){
-            
-        }
-
-        > span:last-child{
-
         }
     }
 
@@ -79,4 +96,23 @@
             opacity: 0.75;
         }
     }
+
+    &__menu {
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%;
+        transform: translateX(-50%);
+        background: $white;
+        margin-top: 1.5rem;
+        padding: 1.625rem;
+        border-radius: 5px;
+       
+        a {
+            display: block;
+            color:$darkBlue;
+            padding: 0.625rem;
+            text-align: center;
+        }
+    }
+
 }
