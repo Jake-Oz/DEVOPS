@@ -87,15 +87,6 @@
         }
     }
 
-    &__cta {
-        font-size: $font-sm;
-        color:$white;
-        transition: opacity 300ms ease-in-out;
-
-        &:hover {
-            opacity: 0.75;
-        }
-    }
 
     &__menu {
         position: absolute;
@@ -106,6 +97,7 @@
         margin-top: 1.5rem;
         padding: 1.625rem;
         border-radius: 5px;
+        z-index: 1;
        
         a {
             display: block;
