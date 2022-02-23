@@ -27,6 +27,36 @@ body {
 
 h1, h2, h3 {
     margin-top: 0;
+    font-weight: 300;
+    color: $darkBlue;
+    line-height: 1.15;
+}
+
+h1 {   
+    font-size: 2.31rem;
+    margin-bottom: 1.5rem;
+
+    @include breakpoint-up(large){
+        font-size: $font-xlge;
+    }
+}
+
+h2{
+    font-size: 1.875rem;
+    margin-bottom: 1.5625rem;
+
+    @include breakpoint-up(large){
+
+        h2{
+            font-size: 2.25rem;
+            margin-bottom: 2.25rem;
+        }
+    }
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 2.25rem;
 }
 
 a, a:visited, a:hover {
@@ -57,10 +87,14 @@ a, a:visited, a:hover {
     
 
     &-p-all{
-        padding-top: 2.25rem;
+        padding-top: 4.375rem;
         padding-right: 1.5rem;
-        padding-bottom: 2.25rem;
+        padding-bottom: 4.375rem;
         padding-left: 1.5rem;
+        @include breakpoint-up(large){
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
     }
     &-p-x{
         padding-right: 1.5rem;
@@ -68,8 +102,12 @@ a, a:visited, a:hover {
     }
 
     &-p-y {
-        padding-top: 2.25rem;
-        padding-bottom: 2.25rem;
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+        @include breakpoint-up(large){
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
     }
 
     &-p-l { 
@@ -81,11 +119,17 @@ a, a:visited, a:hover {
     }
 
     &-p-t {
-        padding-top: 2.25rem;
+        padding-top: 4.375rem;
+        @include breakpoint-up(large){
+            padding-top: 6rem;
+        }
     }
 
     &-p-b {
-        padding-bottom: 2.25rem;
+        padding-bottom: 4.375rem;
+        @include breakpoint-up(large){
+            padding-bottom: 6rem;
+        }
     }
 }
 
