@@ -691,7 +691,7 @@ button:hover, .button:hover {
         -ms-flex: 2;
             flex: 2;
     text-align: right;
-    padding-right: 4.6875rem;
+    width: 40vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
